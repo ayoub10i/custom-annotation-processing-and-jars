@@ -63,7 +63,7 @@ public class Person {
 ```
 ## build configuration 
 if you use gradle as build automation tool , and you choose to have your annotation processor in a separate module,
-you must create a file "META-INF/services/javax.annotation.processing.Processor" inside the resources folder of that module,and you write the name of your processor in that file , in this Case "ToStringProcessor" and include this snippet in the main module that uses the annotation processor 
+you must create a file "META-INF/services/javax.annotation.processing.Processor" inside the resources folder of that module,and you write the name of your processor in that file , in this case "ToStringProcessor" and include this snippet of code in the build.gradle file in the main module that uses the annotation processor 
 ```groovy
 dependencies {
     
